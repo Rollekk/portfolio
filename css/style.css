@@ -665,7 +665,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 
 .btn-allprojects:hover {
 	background-color: #161616;
-	color: rgb(190, 89, 245);;
+	color: rgb(190, 89, 245);
 	border: 1px solid #161616;
 	text-decoration: none;
 }
