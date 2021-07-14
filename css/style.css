@@ -685,6 +685,23 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 	padding-top: 1%;
 }
 
+.shw-cs2 {
+    font-size: 2em;
+    color: #a0a0a0;
+    font-weight: 700;
+    max-width: 100%;
+    padding-left: 5%;
+    padding-top: 3%;	
+}
+
+.shw-cs3 {
+    font-size: 1.1em;
+    color: #a0a0a0;
+    font-weight: 400;
+    max-width: 100%;
+    padding-bottom: 2%;	
+}
+
 .shw-cs4 {
     font-size: 1.2em;
     font-weight: 400;
@@ -712,21 +729,17 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 	float: right;
 }
 
-.shw-cs2 {
-    font-size: 2em;
-    color: #a0a0a0;
-    font-weight: 700;
-    max-width: 100%;
-    padding-left: 5%;
-    padding-top: 3%;	
-}
-
-.shw-cs3 {
-    font-size: 1.1em;
-    color: #a0a0a0;
+.shw-cs5 {
+    font-size: 1.2em;
     font-weight: 400;
-    max-width: 100%;
-    padding-bottom: 2%;	
+    letter-spacing: .06em;
+    line-height: 1.7em;
+    font-family: 'Roboto', sans-serif;
+    color: #a0a0a0;
+    padding-left: 5%;
+	padding-top: 1%;
+	padding-right: 3%;
+	max-width: 100%;
 }
 /*** THE END SHOWCASE FONT STYLE ***/
 
