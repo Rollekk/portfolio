@@ -16,6 +16,7 @@ ul, ol {
 	padding: 0;
     margin-bottom:  0px;
 }
+
 /*** MEDIA ***/
 @media only screen and (max-width: 768px) {
 .prjct-wrt-right {
@@ -430,7 +431,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 .lg-col-wrt {
 	font-size: 1.3em;
 	line-height: 1.8em;
-	padding: 15%;
+	padding: 2% 15% 15% 15%;
 	letter-spacing: .04em;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
@@ -755,6 +756,17 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 	max-width: 100%;
 	float: right;
 }
+
+.shw-cs6 {
+    font-size: 1.3em;
+    color: #a0a0a0;
+    font-weight: 400;
+    max-width: 100%;
+    padding-left: 3%;
+    padding-bottom: 2%;	
+
+}
+
 /*** THE END SHOWCASE FONT STYLE ***/
 
 
