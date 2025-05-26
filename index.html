@@ -8,7 +8,7 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />	   
     <link href="css/style.css" rel="stylesheet" type="text/css" />
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	
 	<script src="js/modernizr.js"></script>
 
@@ -18,47 +18,58 @@
 	   <body>
 	   
 <!--- PAGE LOADING --->	
-<div class="preloading fadeIn">	   
-	   
-		<!--- NAV BAR --->
-		<div class="nav-ttl">
-              Jan Krakowiak
+<div>	   
+		<div>
+			<input type="checkbox" id="toggle" class="about-me-checkbox" checked/>
+			<label for="toggle" class = "about-me-button">About me<i class="fa fa-arrow-down"></i></label>
+			<div class = "about-me-bar">
+				<h1>Jan Krakowiak </h1>
+			
+				<a style="font-size:26px" target="_blank" href="mailto:jankrakowiakk@gmail.com"><i class="fa fa-envelope"></i></a>
+				<a style="font-size:26px" target="_blank" href="https://github.com/Rollekk"><i class="fa fa-github"></i></a>
+				<a style="font-size:26px" target="_blank" href="https://www.linkedin.com/in/janek-krakowiak-338227277/"><i class="fa fa-linkedin"></i></a>
+			
+				<div class = "about-me-title">
+					Hello there!
+				</div>
+				<div class = "about-me-desc">
+					<p>I’m Janek, an AI Programmer working in Unreal Engine.</p> 
+					<p>I specialize in designing and implementing advanced AI behavior using Behavior Trees, State Trees, EQS, blackboards, and custom C++ systems to create responsive and scalable in-game intelligence.</p>
+					<p>My portfolio features work I’ve done professionally and through personal projects. With a passion for growth, you’ll find a variety of projects here.</p>
+				</div>
+			</div>
 		</div>
-		
-	<!--- THE END NAV BAR ---> 
 
-	    <div class="container">
+	    <div class="container"> <!--- size --->
 
 		<!--- HERO HEADER --->
 	            <div class="row">
-	                <div class="col-md-12">
-                       <div class="works-hero-bg" >
-					        <h1 class="fade-anime-top">My projects</h1>	
-												
+	                <div>
+                       <div class="portfolio-title">
+					        <h1>My projects</h1>				
                        </div>
 					   
 	                </div>
 				</div>
 		<!--- THE END HERO HEADER --->		
 			
-		<div class="categories">
+		<div class="portfolio-categories">
 			<hr>
 			<ul class="cat">
 			  <li>
 				<ol class="type">
-				  <li><a href="#" data-filter="*" class="active">All</a></li>
-				  <li><a href="#" data-filter=".UE4">Unreal Engine 4</a></li>
-				  <li><a href="#" data-filter=".UE5">Unreal Engine 5</a></li>
-				  <li><a href="#" data-filter=".Unity">Unity</a></li>
-				  <li><a href="#" data-filter=".NoEngine">No Game Engine</a></li>
+					<li><a href="#" data-filter="*" class="active">All</a></li>
+					<li><a href="#" data-filter=".UE4">Unreal Engine 4</a></li>
+					<li><a href="#" data-filter=".UE5">Unreal Engine 5</a></li>
+					<li><a href="#" data-filter=".Unity">Unity</a></li>
+					<li><a href="#" data-filter=".NoEngine">No Game Engine</a></li>
 				</ol>
 			  </li>
 			</ul>
 			<div class="clearfix"></div>
+		</div>
 			
-		  </div>
-			
-		  <div class="categoriesbottom">
+		<div class="portfolio-categories-bottom">
 			
 			<ul class="cat">
 			  <li>
@@ -70,10 +81,9 @@
 			  </li>
 			</ul>
 			<div class="clearfix"></div>
-			
-		  </div>
+		</div>
 
-		  <div class="categoriesbottom">
+		<div class="portfolio-categories-bottom">
 			
 			<ul class="cat">
 			  <li>
@@ -84,124 +94,163 @@
 			  </li>
 			</ul>
 			<div class="clearfix"></div>
-			
-		  </div>
+		</div>
 
 		<!--- WORK PAGE PROJECTS --->
 			<div class="row">
 				<div class="portfolio-items">
-
-					<div class="col-md-6 col-xs-12 UE4 3D Work">
-                        <div class="prjct-bg" >					
-					            <a href="Projects/Ghostrunner2.html"> <img src="img/Ghostrunner2/Ghostrunner2.png" alt="" class="img-prjct-wrk"> </a>
-					          <div class="prjct-wrt-right-wrk"> </div>
-							  <div class="shw-cs2"> Ghostrunner 2 </div>
-							  <div class="shw-cs4"> Released title </div>
-							  <div class="shw-cs5"> Unreal Engine 4.27 </div>
-							  <div class="shw-cs"> C++, Blueprints </div>
+					
+					<div class="columns UE4 3D Work">
+						<a href="Projects/Ghostrunner2.html">
+                        <div class="portfolio-item-padding">					
+									<div class="portfolio-image">
+										<img src="img/Ghostrunner2/Ghostrunner2.png" alt="" class="portfolio-image-static">
+										<img src="img/Ghostrunner2/Ghostrunner2.gif" alt="" class="portfolio-image-hover">
+									</div>
+							  <div class="portfolio-item-title"> Ghostrunner 2 </div>
+							  <div class="portfolio-item-subtitle"> Released title </div>
+							  <div class="portfolio-item-subtitle"> Unreal Engine 4.27 </div>
+							  <div class="portfolio-item-additional"> C++, Blueprints </div>
 						</div>
+						</a>
 	                </div>
 
-					<div class="col-md-6 col-xs-12 UE4 3D Work">
-                        <div class="prjct-bg" >					
-					            <a href="Projects/Ghostrunner_HEL.html"> <img src="img/Ghostrunner_HEL/project_HEL.png" alt="" class="img-prjct-wrk"> </a>
-					          <div class="prjct-wrt-right-wrk"> </div>
-							  <div class="shw-cs2"> Ghostrunner - Project_HEL </div>
-							  <div class="shw-cs4"> Released title </div>
-							  <div class="shw-cs5"> Unreal Engine 4.27 </div>
-							  <div class="shw-cs"> C++, Blueprints </div>
+					<div class="columns UE4 3D Work">
+						<a href="Projects/Ghostrunner_HEL.html">
+                        <div class="portfolio-item-padding" >	
+							<div class="portfolio-image">				
+					        	<img src="img/Ghostrunner_HEL/project_HEL.png" alt="" class="portfolio-image-static">
+								<img src="img/Ghostrunner_HEL/project_HEL.png" alt="" class="portfolio-image-hover">
+							</div>
+
+							  <div class="portfolio-item-title"> Ghostrunner - Project_HEL </div>
+							  <div class="portfolio-item-subtitle"> Released title </div>
+							  <div class="portfolio-item-subtitle"> Unreal Engine 4.27 </div>
+							  <div class="portfolio-item-additional"> C++, Blueprints </div>
 						</div>
+						</a>
 	                </div>
 
-					<div class="col-md-6 col-xs-12 UE4 3D">
-						<div class="prjct-bg">					
-								<a href="Projects/Praca_inżynierska.html"> <img src="img/EscapeRoom/portfolio-01.jpg" alt="" class="img-prjct-wrk"> </a>
-							<div class="prjct-wrt-left-wrk"> </div>
-							<div class="shw-cs2"> Escape Room </div>
-							<div class="shw-cs4"> Engineer's Thesis </div>
-							<div class="shw-cs5"> Unreal Engine 4.24</div>
-							<div class="shw-cs"> C++, Blueprints </div>
-						</div>					
+					<div class="columns UE4 3D">
+						<a href="Projects/Praca_inżynierska.html"> 
+						<div class="portfolio-item-padding">	
+							<div class="portfolio-image">				
+					        	<img src="img/EscapeRoom/portfolio-01.jpg" alt="" class="portfolio-image-static">
+								<img src="img/EscapeRoom/portfolio-01.jpg" alt="" class="portfolio-image-hover">
+							</div>				
+							<div class="portfolio-item-title"> Escape Room </div>
+							<div class="portfolio-item-subtitle"> Engineer's Thesis </div>
+							<div class="portfolio-item-subtitle"> Unreal Engine 4.24</div>
+							<div class="portfolio-item-additional"> C++, Blueprints </div>
+						</div>	
+						</a>				
 					</div>
 
-	                <div class="col-md-6 col-xs-12 UE4 3D">
-                        <div class="prjct-bg" >					
-					            <a href="Projects/Stealth_game.html"> <img src="img/Ninjo/portfolio-02.jpg" alt="" class="img-prjct-wrk"> </a>
-					          <div class="prjct-wrt-right-wrk"> </div>
-							  <div class="shw-cs2"> Stealth Game </div>
-							  <div class="shw-cs4"> Hobby project </div>
-							  <div class="shw-cs5"> Unreal Engine 4.24</div>
-							  <div class="shw-cs"> C++ </div>
+	                <div class="columns UE4 3D">
+						<a href="Projects/Stealth_game.html"> 
+                        <div class="portfolio-item-padding" >
+							<div class="portfolio-image">
+					            <img src="img/Ninjo/portfolio-02.jpg" alt="" class="portfolio-image-static">
+								<img src="img/Ninjo/portfolio-02.jpg" alt="" class="portfolio-image-hover">
+							</div>					
+							  <div class="portfolio-item-title"> Stealth Game </div>
+							  <div class="portfolio-item-subtitle"> Hobby project </div>
+							  <div class="portfolio-item-subtitle"> Unreal Engine 4.24</div>
+							  <div class="portfolio-item-additional"> C++ </div>
 						</div>
+						</a>
 	                </div>
                     
-	                <div class="col-md-6 col-xs-12 NoEngine 2D">
-                        <div class="prjct-bg" >					
-					            <a href="Projects/Bomberman.html"> <img src="img/Bomberman/portfolio-03.jpg" alt="" class="img-prjct-wrk"> </a>
-					          <div class="prjct-wrt-left-wrk"> </div>
-							  <div class="shw-cs2"> Bomberman </div>
-							  <div class="shw-cs4"> Hobby project </div>
-							  <div class="shw-cs5"> C library - Allegro 5 </div>
-							  <div class="shw-cs"> C++ </div>
+	                <div class="columns NoEngine 2D">
+						<a href="Projects/Bomberman.html">
+                        <div class="portfolio-item-padding" >	
+							<div class="portfolio-image">
+					            <img src="img/Bomberman/portfolio-03.jpg" alt="" class="portfolio-image-static">
+								<img src="img/Bomberman/portfolio-03.jpg" alt="" class="portfolio-image-hover">
+							</div>					
+							  <div class="portfolio-item-title"> Bomberman </div>
+							  <div class="portfolio-item-subtitle"> Hobby project </div>
+							  <div class="portfolio-item-subtitle"> C++ library - Allegro 5 </div>
+							  <div class="portfolio-item-additional"> C++ </div>
 						</div>					
-
+						</a>
 					</div>
-	                <div class="col-md-6 col-xs-12 Unity 2D">
-                        <div class="prjct-bg" >					
-					            <a href="Projects/Plantie.html"> <img src="img/Plantie/Plantie.jpg" alt="" class="img-prjct-wrk"> </a>
-					          <div class="prjct-wrt-right-wrk"> </div>
-							  <div class="shw-cs2"> Plant simulator </div>
-							  <div class="shw-cs4"> Hobby project </div>
-							  <div class="shw-cs5"> Unity 2019</div>
-							  <div class="shw-cs"> C# </div>
+	                <div class="columns Unity 2D">
+						<a href="Projects/Plantie.html">
+                        <div class="portfolio-item-padding" >
+							<div class="portfolio-image">
+					            <img src="img/Plantie/Plantie.jpg" alt="" class="portfolio-image-static">
+								<img src="img/Plantie/Plantie.jpg" alt="" class="portfolio-image-hover">
+							</div>						
+							  <div class="portfolio-item-title"> Plant simulator </div>
+							  <div class="portfolio-item-subtitle"> Hobby project </div>
+							  <div class="portfolio-item-subtitle"> Unity 2019</div>
+							  <div class="portfolio-item-additional"> C# </div>
 						</div>
+						</a>
 	                </div>
                			
 
 			    
-	                <div class="col-md-6 col-xs-12 UE4 VR">
-                        <div class="prjct-bg" >					
-					            <a href="Projects/Praca_magisterskaUE.html"> <img src="img/UEVR/portfolio-04.jpg" alt="" class="img-prjct-wrk"> </a>
-					          <div class="prjct-wrt-left-wrk"> </div>
-							  <div class="shw-cs2"> Fruit Ninja VR </div>
-							  <div class="shw-cs4"> Master's Thesis </div>
-							  <div class="shw-cs5"> Unreal Engine 4.24</div>
-							  <div class="shw-cs"> Blueprints </div>
-						</div>					
+	                <div class="columns UE4 VR">
+						<a href="Projects/Praca_magisterskaUE.html">
+                        <div class="portfolio-item-padding" >		
+							<div class="portfolio-image">
+					        	<img src="img/UEVR/portfolio-04.jpg" alt="" class="portfolio-image-static">
+								<img src="img/UEVR/portfolio-04.jpg" alt="" class="portfolio-image-hover">
+							</div>				
+							  <div class="portfolio-item-title"> Fruit Ninja VR </div>
+							  <div class="portfolio-item-subtitle"> Master's Thesis </div>
+							  <div class="portfolio-item-subtitle"> Unreal Engine 4.24</div>
+							  <div class="portfolio-item-additional"> Blueprints </div>
+						</div>
+						</a>					
 	                </div>
 					
-	                <div class="col-md-6 col-xs-12 Unity VR">
-                        <div class="prjct-bg" >					
-					            <a href="Projects/Praca_magisterskaU.html"> <img src="img/UVR/portfolio-05.jpg" alt="" class="img-prjct-wrk"> </a>
-					          <div class="prjct-wrt-right-wrk"> </div>
-							  <div class="shw-cs2"> Fruit Ninja VR </div>
-							  <div class="shw-cs4"> Master's Thesis </div>
-							  <div class="shw-cs5"> Unity 2019</div>
-							  <div class="shw-cs"> C# </div>
+	                <div class="columns Unity VR">
+						<a href="Projects/Praca_magisterskaU.html">
+                        <div class="portfolio-item-padding">		
+							<div class="portfolio-image">
+								<img src="img/UVR/portfolio-05.jpg" alt="" class="portfolio-image-static">
+								<img src="img/UVR/portfolio-05.jpg" alt="" class="portfolio-image-hover">
+							</div>				
+							  <div class="portfolio-item-title"> Fruit Ninja VR </div>
+							  <div class="portfolio-item-subtitle"> Master's Thesis </div>
+							  <div class="portfolio-item-subtitle"> Unity 2019</div>
+							  <div class="portfolio-item-additional"> C# </div>
 						</div>
+						</a>
 	                </div>
                 
 
-	                <div class="col-md-6 col-xs-12 Unity 3D">
-                        <div class="prjct-bg" >					
-					            <a href="Projects/Runner_prototype.html"> <img src="img/Prototype/Game1.jpg" alt="" class="img-prjct-wrk"> </a>
-					          <div class="prjct-wrt-left-wrk"> </div>
-							  <div class="shw-cs2"> Parkour Prototype </div>
-							  <div class="shw-cs4"> Hobby project </div>
-							  <div class="shw-cs5"> Unity 2019</div>
-							  <div class="shw-cs"> C# </div>
-						</div>					
+	                <div class="columns Unity 3D">
+						<a href="Projects/Runner_prototype.html"> 
+                        <div class="portfolio-item-padding">		
+							<div class="portfolio-image">
+								<img src="img/Prototype/Game1.jpg" alt="" class="portfolio-image-static">
+								<img src="img/Prototype/Game1.jpg" alt="" class="portfolio-image-hover">
+							</div>				
+							  <div class="portfolio-item-title"> Parkour Prototype </div>
+							  <div class="portfolio-item-subtitle"> Hobby project </div>
+							  <div class="portfolio-item-subtitle"> Unity 2019</div>
+							  <div class="portfolio-item-additional"> C# </div>
+						</div>
+						</a>					
 	                </div>
 					
-	                <div class="col-md-6 col-xs-12 Unity 3D">
-                        <div class="prjct-bg" >					
-					            <a href="Projects/ReShut.html"> <img src="img/Reshut/ReShutTrail4.jpg" alt="" class="img-prjct-wrk"> </a>
-					          <div class="prjct-wrt-right-wrk"> </div>
-							  <div class="shw-cs2"> FPS/Puzzle Prototype </div>
-							  <div class="shw-cs4"> Hobby project </div>
-							  <div class="shw-cs5"> Unity 2019</div>
-							  <div class="shw-cs"> C# </div>
+	                <div class="columns Unity 3D">
+						<a href="Projects/ReShut.html">
+                        <div class="portfolio-item-padding">					
+							<div class="portfolio-image">
+								<img src="img/Reshut/ReShutTrail4.jpg" alt="" class="portfolio-image-static">
+								<img src="img/Reshut/ReShutTrail4.jpg" class="portfolio-image-hover">
+							</div>	
+							  <div class="portfolio-item-title"> FPS/Puzzle Prototype </div>
+							  <div class="portfolio-item-subtitle"> Hobby project </div>
+							  <div class="portfolio-item-subtitle"> Unity 2019</div>
+							  <div class="portfolio-item-additional"> C# </div>
 						</div>
+						</a>
 	                </div>
 
 				</div>
@@ -212,17 +261,16 @@
 		<!--- FOOTER --->
 		<div class="container">
 	            <div class="row">
-                       <div class="footer-bg" >
+                       <div class="footer" >
 						<hr>
-					      <div class="col-md-4 col-xs-12">
-						    <div class="shw-cs3"> Email: <a href="mailto:jankrakowiakk@gmail.com" class = "ftr-lnk"> jankrakowiakk@gmail.com</div>
-                            </div>
+						    <div class="footer-mail"> Email: <a href="mailto:jankrakowiakk@gmail.com"> jankrakowiakk@gmail.com</a></div>
 
-					      <div class="right">
-							<a target="_blank" href="https://www.linkedin.com/in/janek-krakowiak-338227277/" class="ftr-lnk"> LinkedIn</a>
-							<a target="_blank" href="https://github.com/Rollekk" class="ftr-lnk"> Github</a>
-                          </div>						  					  
-				       </div>
+							<div class ="footer-links">
+								<a target="_blank" href="https://www.linkedin.com/in/janek-krakowiak-338227277/" class="footer-link"> LinkedIn</a>
+								<a target="_blank" href="https://github.com/Rollekk" class="footer-link"> Github</a>
+							</div>
+
+                        </div>					  					  
 				</div>
 		</div>		
 		<!--- THE END FOOTER --->			
