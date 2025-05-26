@@ -260,9 +260,22 @@
 				</div>
 		</div>			
 </div>
-			<script src="js/jquery-2.1.1.js" defer></script>
+
+			<script>
+				window.addEventListener('resize', () => {
+					const toggle = document.getElementById('toggle');
+					
+					if (window.innerWidth < 1900) {
+						toggle.checked = false;
+					} else {
+						toggle.checked = true;
+					}
+				});
+			</script>
+
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" defer></script>
 			<script src="js/jquery.isotope.js" defer></script>
-			<script src="js/bootstrap.min.js" defer></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" defer></script>
 			<script src="js/main.js" defer></script>
 		</body>		
 		
