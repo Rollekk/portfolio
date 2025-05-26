@@ -523,6 +523,23 @@ ol.type li a:hover {
   background-size: contain;
 }
 
+.fade-anime-zoom { 
+    animation:animatezoom 2s;
+}
+
+@keyframes animatezoom { 
+    from {transform:scale(0)} to{transform:scale(1)}
+}
+
+.fade-anime-opacity {
+	animation: opac 3s;
+}
+
+@keyframes opac {
+	from{opacity:0} to{opacity:1}
+}
+
+/*
 .fade-anime-right {
 	position: relative;
 	animation: animateright 1s;
@@ -559,44 +576,4 @@ ol.type li a:hover {
 @keyframes animatetop {
 	from {top:-300px;opacity:0} to {top:0;opacity:1}
 }
-
-.fade-anime-zoom { 
-    animation:animatezoom 2s;
-}
-
-@keyframes animatezoom { 
-    from {transform:scale(0)} to{transform:scale(1)}
-}
-
-.fade-anime-fade {
-	animation:fading 10s infinite;
-}
-
-@keyframes fading {
-	0%{opacity:0}50%{opacity:1}100%{opacity:0}
-}
-
-.fade-anime-opacity {
-	animation: opac 3s;
-}
-
-@keyframes opac {
-	from{opacity:0} to{opacity:1}
-}
-
-.preloading {
-   -webkit-animation-duration: 0s;
-   animation-duration: 0s;
-   -webkit-animation-fill-mode: both;
-   animation-fill-mode: both;
-}
-         
-@-webkit-keyframes fadeIn {
-   0% {opacity: 0;}
-   100% {opacity: 1;}
-}
-         
-@keyframes fadeIn {
-   0% {opacity: 0;}
-   100% {opacity: 1;}
-}
+*/
